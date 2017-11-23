@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadooProject", "BadooProject\BadooProject.csproj", "{726B6A4E-3D37-49CB-AB5E-2402FBB6E8A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadooTests", "BadooTests\BadooTests.csproj", "{62CD2B91-BAB2-484E-AAC7-323232D8FBC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{726B6A4E-3D37-49CB-AB5E-2402FBB6E8A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{726B6A4E-3D37-49CB-AB5E-2402FBB6E8A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{726B6A4E-3D37-49CB-AB5E-2402FBB6E8A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{726B6A4E-3D37-49CB-AB5E-2402FBB6E8A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62CD2B91-BAB2-484E-AAC7-323232D8FBC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62CD2B91-BAB2-484E-AAC7-323232D8FBC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62CD2B91-BAB2-484E-AAC7-323232D8FBC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62CD2B91-BAB2-484E-AAC7-323232D8FBC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F24BB09E-D12A-4E43-BA21-CF102D0ADEBD}
+	EndGlobalSection
+EndGlobal
