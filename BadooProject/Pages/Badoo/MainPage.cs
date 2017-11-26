@@ -7,20 +7,18 @@ namespace BadooProject.Pages.Badoo
 {
     public class MainPage : BasePage
     {
+        [FindsBy(How = How.XPath, Using = "//span[@data-choice='no']")] private IWebElement dislikes;
         [FindsBy(How = How.XPath, Using = "//span[@data-choice='yes']")] private IWebElement likeButton;
         [FindsBy(How = How.XPath, Using = "//h1[.='Больше симпатий']")] private IWebElement moreLikes;
-        [FindsBy(How = How.XPath, Using = "//span[@data-choice='no']")] private IWebElement dislikes;
 
         public MainPage LikePages()
         {
             try
             {
-                for (int i = 0; i < 100; i++)
-                {
+                for (var i = 0; i < 100; i++)
                     likeButton.Click();
-                }
             }
-            catch (Exception    e)
+            catch (Exception e)
             {
                 return this;
             }

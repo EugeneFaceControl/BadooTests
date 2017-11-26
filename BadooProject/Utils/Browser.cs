@@ -24,14 +24,14 @@ namespace BadooProject.Utils
                     _webDriver =
                         new ChromeDriver();
                     break;
-                case "Grid":
-                    _webDriver = new ChromeDriver();
-                    DesiredCapabilities capabilities = new DesiredCapabilities();
-                    capabilities.SetCapability(CapabilityType.BrowserName, "chrome");
-                    capabilities.SetCapability(CapabilityType.Version, "");
-                    capabilities.SetCapability(CapabilityType.Platform, new Platform(PlatformType.Windows));
-                    _webDriver = new RemoteWebDriver(new Uri(Hub), capabilities);
-                    break;
+//                case "Grid":
+//                    _webDriver = new ChromeDriver();
+//                    DesiredCapabilities capabilities = new DesiredCapabilities();
+//                    capabilities.SetCapability(CapabilityType.BrowserName, "chrome");
+//                    capabilities.SetCapability(CapabilityType.Version, "");
+//                    capabilities.SetCapability(CapabilityType.Platform, new Platform(PlatformType.Windows));
+//                    _webDriver = new RemoteWebDriver(new Uri(Hub), capabilities);
+//                    break;
                 default:
                     throw new Exception("Unknown browser!");
             }
