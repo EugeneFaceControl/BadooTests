@@ -13,8 +13,22 @@ namespace BadooTests
         {
             RegisterPage
                 .GoToLoginPage()
-
+                .LoginViaFacebook()
+                .Register()
+                .LikePages()
                 ;
+        }
+
+        [Test]
+        public void JsExample()
+        {
+            RegisterPage
+                .GoToLoginPage()
+                .LoginViaFacebook()
+                .Register()
+                .ExecuteJs()
+                ;
+
         }
     }
 }

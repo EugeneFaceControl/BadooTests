@@ -6,13 +6,8 @@ namespace BadooProject.Pages
 {
     public class RegisterPage : BasePage
     {
-        [FindsBy(How = How.XPath, Using = "//span[.='Войти']/parent::div/parent::a")]
+        [FindsBy(How = How.XPath, Using = "//span[.='Войти']/parent::*/parent::*")]
         private IWebElement loginButton;
-
-//        public RegisterPage()
-//        {
-//            PageFactory.InitElements(Browser.WebDriver, this);
-//        }
 
         public LoginPage GoToLoginPage()
         {
