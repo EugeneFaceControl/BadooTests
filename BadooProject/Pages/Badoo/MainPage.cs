@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using BadooProject.Utils;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
-using OpenQA.Selenium.Support.UI;
 
-namespace BadooProject.Pages
+namespace BadooProject.Pages.Badoo
 {
     public class MainPage : BasePage
     {
@@ -25,7 +20,7 @@ namespace BadooProject.Pages
                     likeButton.Click();
                 }
             }
-            catch (Exception e)
+            catch (Exception    e)
             {
                 return this;
             }

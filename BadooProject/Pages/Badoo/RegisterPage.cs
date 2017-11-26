@@ -1,8 +1,7 @@
-﻿using BadooProject.Utils;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 
-namespace BadooProject.Pages
+namespace BadooProject.Pages.Badoo
 {
     public class RegisterPage : BasePage
     {

@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 
-namespace BadooProject.Pages
+namespace BadooProject.Pages.Badoo
 {
     public class LoginPage : BasePage
     {

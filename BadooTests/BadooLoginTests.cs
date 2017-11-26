@@ -1,16 +1,18 @@
-﻿using BadooProject.Pages;
+﻿using BadooProject.Pages.Badoo;
+using BadooProject.Utils;
 using NUnit.Framework;
 
 namespace BadooTests
 {
     [TestFixture]
-    public class LoginTests : BaseTest
+    public class BadooLoginTests : BaseTest
     {
         protected RegisterPage RegisterPage => new RegisterPage();
 
         [Test]
-        public void Login()
+        public void LoginBadoo()
         {
+            Browser.Goto(settings.BaseURL);
             RegisterPage
                 .GoToLoginPage()
                 .LoginViaFacebook()
@@ -22,6 +24,7 @@ namespace BadooTests
         [Test]
         public void JsExample()
         {
+            Browser.Goto(settings.BaseURL);
             RegisterPage
                 .GoToLoginPage()
                 .LoginViaFacebook()

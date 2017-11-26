@@ -32,7 +32,6 @@ namespace BadooTests
         {
             Browser.Init(browserName);
             Browser.WebDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(settings.ImplicitTimeout);
-            Browser.Goto(settings.BaseURL);
         }
     }
 }

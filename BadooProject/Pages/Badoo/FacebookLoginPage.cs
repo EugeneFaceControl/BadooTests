@@ -1,9 +1,8 @@
 ﻿using BadooProject.Utils;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
-using static BadooProject.Utils.Browser;
 
-namespace BadooProject.Pages
+namespace BadooProject.Pages.Badoo
 {
     public class FacebookLoginPage : BasePage
     {
@@ -15,12 +14,12 @@ namespace BadooProject.Pages
         public MainPage Register()
         {
 //            string currentHandle = WebDriver.CurrentWindowHandle;
-            GotoLastWindow();
+            Browser.GotoLastWindow();
             settings = new TestSettings();
             emailInput.SendKeys(settings.Email);
             passwordInput.SendKeys(settings.Password);
             loginButton.Click();
-            GotoFirstWindow();
+            Browser.GotoFirstWindow();
             return new MainPage();
         }
     }
